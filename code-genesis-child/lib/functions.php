@@ -182,14 +182,15 @@ function socialshare_buttons() {
 		$pinterestURL = 'https://pinterest.com/pin/create/button/?url='.$longvietURL.'&amp;media='.$longvietThumbnail[0].'&amp;description='.$longvietTitle;
 
 		// Add sharing button at the end of page/page content
-		?><div class="longviet-social">
+		$content='<div class="longviet-social">
 			<div class="longviet-link social-title"><h5>SHARE ON</h5></div>
 			<a class="longviet-link longviet-twitter" href="'. $twitterURL .'" target="_blank">Twitter</a>
 			<a class="longviet-link longviet-facebook" href="'.$facebookURL.'" target="_blank">Facebook</a>
 			<a class="longviet-link longviet-buffer" href="'.$bufferURL.'" target="_blank">Buffer</a>
 			<a class="longviet-link longviet-linkedin" href="'.$linkedInURL.'" target="_blank">LinkedIn</a>
 			<a class="longviet-link longviet-pinterest" href="'.$pinterestURL.'" data-pin-custom="true" target="_blank">Pin It</a>
-		</div><?php
+		</div>';
+		echo $content;
 	}
 }
 endif;
