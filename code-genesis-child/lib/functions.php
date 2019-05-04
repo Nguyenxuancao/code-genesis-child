@@ -152,7 +152,9 @@ function related_post_category() {
 						</li> <?php $i ++; ?>
 					<?php endwhile;  ?>
 				<?php else : ?>
-				<p><?php _e( 'Sorry, no related articles to display', 'longviet' );?></p>
+				<div class="related-posts-container"><div class="related-posts-title-block"><h3 class="related-posts-title"><?php _e( 'Related Articles', 'longviet' );?></h3></div>
+					<div class="related-posts-inner"><ul class="related-posts-blook">
+						<p><?php _e( 'Sorry, no related articles to display', 'longviet' );?></p>
 				</ul></div></div>
 			<?php endif; 
 			wp_reset_postdata(); // Reset postdata
